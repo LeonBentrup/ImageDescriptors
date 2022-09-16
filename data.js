@@ -16,13 +16,17 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
         }
       ],
-      "faceSize": 1024,
+      "faceSize": 2048,
       "initialViewParameters": {
-        "yaw": -1.4823334888246542,
-        "pitch": 0.0011658080785945657,
-        "fov": 1.0839673103598262
+        "yaw": 0.6725827765430168,
+        "pitch": 0.06510053264864979,
+        "fov": 1.9291621933263754
       },
       "linkHotspots": [],
       "infoHotspots": []
@@ -31,8 +35,8 @@ var APP_DATA = {
   "name": "Project Title",
   "settings": {
     "mouseViewMode": "drag",
-    "autorotateEnabled": true,
+    "autorotateEnabled": false,
     "fullscreenButton": false,
-    "viewControlButtons": false
+    "viewControlButtons": true
   }
 };
