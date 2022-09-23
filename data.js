@@ -1,8 +1,8 @@
 var APP_DATA = {
   "scenes": [
     {
-      "id": "0-frame_00000_finalcolor",
-      "name": "Frame_00000_FinalColor",
+      "id": "0-test",
+      "name": "test",
       "levels": [
         {
           "tileSize": 256,
@@ -16,17 +16,13 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
         }
       ],
-      "faceSize": 2048,
+      "faceSize": 1024,
       "initialViewParameters": {
-        "yaw": 0.6725827765430168,
-        "pitch": 0.06510053264864979,
-        "fov": 1.9291621933263754
+        "yaw": 0.02517506022520699,
+        "pitch": 0.14701095550059406,
+        "fov": 1.0839673103598262
       },
       "linkHotspots": [],
       "infoHotspots": []
@@ -37,6 +33,6 @@ var APP_DATA = {
     "mouseViewMode": "drag",
     "autorotateEnabled": false,
     "fullscreenButton": false,
-    "viewControlButtons": true
+    "viewControlButtons": false
   }
 };
