@@ -24,26 +24,19 @@ var APP_DATA = {
       ],
       "faceSize": 2048,
       "initialViewParameters": {
-        "yaw": 1.8067917739461272,
-        "pitch": -0.13008595473055884,
+        "yaw": 1.6658203585712137,
+        "pitch": 0.07362401281167763,
         "fov": 1.0839673103598262
       },
       "linkHotspots": [
         {
-          "yaw": 2.2811672521191007,
-          "pitch": 0.15784081452253673,
+          "yaw": 2.2606210313389257,
+          "pitch": 0.182804142932671,
           "rotation": 0.7853981633974483,
           "target": "1-test-360"
         }
       ],
-      "infoHotspots": [
-        {
-          "yaw": 1.8495163886647337,
-          "pitch": -0.4550345737488968,
-          "title": "CPS",
-          "text": "Text"
-        }
-      ]
+      "infoHotspots": []
     },
     {
       "id": "1-test-360",
@@ -65,26 +58,33 @@ var APP_DATA = {
       ],
       "faceSize": 1024,
       "initialViewParameters": {
-        "yaw": -1.542696468511009,
-        "pitch": 0.07009540028080075,
+        "yaw": -1.5326760608490275,
+        "pitch": 0.014367963867702116,
         "fov": 1.0839673103598262
       },
       "linkHotspots": [
         {
-          "yaw": -0.9514390347465298,
-          "pitch": 0.1870640281172573,
+          "yaw": -0.9515536380622169,
+          "pitch": 0.23364911973191127,
           "rotation": 0,
           "target": "0-test"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": -1.6621699070895364,
+          "pitch": -0.1401292311562834,
+          "title": "CPS",
+          "text": "Cyberphysikalische Systeme"
+        }
+      ]
     }
   ],
   "name": "Project Title",
   "settings": {
     "mouseViewMode": "drag",
-    "autorotateEnabled": false,
-    "fullscreenButton": true,
-    "viewControlButtons": true
+    "autorotateEnabled": true,
+    "fullscreenButton": false,
+    "viewControlButtons": false
   }
 };
