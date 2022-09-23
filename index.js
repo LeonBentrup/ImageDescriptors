@@ -187,6 +187,7 @@
     scene.view.setParameters(scene.data.initialViewParameters);
     scene.scene.switchTo();
     startAutorotate();
+	hideTxtBox(scene)
     updateSceneName(scene);
     updateSceneList(scene);
   }
@@ -342,10 +343,12 @@
     var toggle = function() {
       wrapper.classList.toggle('visible');
       modal.classList.toggle('visible');
+		
     };
 
     // Show content when hotspot is clicked.
     wrapper.querySelector('.info-hotspot-header').addEventListener('click', toggle);
+	wrapper.querySelector('.info-hotspot-header').addEventListener('click', idAlert);
 
     // Hide content when close icon is clicked.
     modal.querySelector('.info-hotspot-close-wrapper').addEventListener('click', toggle);
@@ -385,8 +388,25 @@
     }
     return null;
   }
+	function hideTxtBox(scene) {
+  if (sanitize(scene.data.name) === "test 360") {
+    document.getElementById("txtBox1").style.display = "block";
+  } else {
+    document.getElementById("txtBox1").style.display = "none";
+  }
+}
+
+function idAlert(event) { 
+  if(event.currentTarget.textContent.includes('CPS2')){
+	document.getElementById("divCPS").style.display = "block";
+  }
+	else{
+		document.getElementById("divCPS").style.display = "none";
+	}
+}
 
   // Display the initial scene.
   switchScene(scenes[0]);
 
 })();
+

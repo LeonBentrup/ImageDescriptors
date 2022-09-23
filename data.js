@@ -75,7 +75,13 @@ var APP_DATA = {
           "yaw": -1.6621699070895364,
           "pitch": -0.1401292311562834,
           "title": "CPS",
-          "text": "Cyberphysikalische Systeme"
+          "text": "<script>hideTxtBox1()</script>"
+        },
+		{
+          "yaw": -12.6621699070895364,
+          "pitch": -0.1401292311562834,
+          "title": "CPS2",
+          "text": "<script>hideTxtBox1()</script>"
         }
       ]
     }
@@ -83,8 +89,10 @@ var APP_DATA = {
   "name": "Project Title",
   "settings": {
     "mouseViewMode": "drag",
-    "autorotateEnabled": true,
+    "autorotateEnabled": false,
     "fullscreenButton": false,
     "viewControlButtons": false
   }
 };
+
+

@@ -63,13 +63,45 @@
 <a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
   <img class="icon" src="img/minus.png">
 </a>
-<textarea class="scrollabletextbox" style="overflow:hidden" name="note">
+<textarea class="scrollabletextbox" style="overflow:hidden" name="note" id="txtBox1">
 Casey: Hey! Hier oben. 
 	
 </textarea>
 
-<input type="button" class="anybutton" id="myab" onclick="history.back()" value="Zurück" />
+<input type="button" class="anybutton"  onclick="history.back()" value="Zurück" />
 <a href="Cps.html" class="button">Go to Google</a>
+<div style="position: fixed; display: none" id="divCPS">
+	<textarea style="resize:none; border:none; font-family:Arial; font-size: 36pt; color:#0069A2" rows="1" cols="50">Cyber-Physikalische-Systeme</textarea>
+	<br>
+	<textarea style="resize:none; border:none; font-family:Arial; font-size: 28pt; color:#; overflow: hidden;"  >
+	
+	</textarea>
+	<input type="button" class="anybutton" id="myab" onclick="history.back()" value="Zurück" />
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <h3>London</h3>
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vVeyePVg8cI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+	
+	</div>
+	
+	
+	
 <script src="vendor/screenfull.min.js" ></script>
 <script src="vendor/bowser.min.js" ></script>
 <script src="vendor/marzipano.js" ></script>
@@ -78,4 +110,22 @@ Casey: Hey! Hier oben.
 <script src="index.js"></script>
 
 </body>
+	<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
 </html>
