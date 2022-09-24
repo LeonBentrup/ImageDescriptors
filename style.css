@@ -862,16 +862,19 @@ body.view-control-buttons .viewControlButton {
     color: black;
     font-size: 28pt;
     display: none;
-    padding: 100px 20px;
+    padding: 10px 20px;
     height: 100%;
+	overflow-y: scroll
 }
 .row {
     display: flex;
 }
 /* Create two equal columns that sits next to each other */
 .column {
-    flex: 50%;
+	flex: 50%;
     padding: 30px;
+	overflow-y: auto;
+	max-height: 30%;
 }
 ul {
   list-style: inside;

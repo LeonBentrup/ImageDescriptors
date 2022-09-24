@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+	overflow-y: hidden
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+	column{
+		overflow-y: auto
+	}
+
+#Home {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
+<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>Home is where the heart is..</p>
+</div>
+
+<div id="News" class="tabcontent">
+	<div class="row">
+<div style="float: left; width: 50%; overflow-y: scroll" class="column"> <img src="img/cps.png" width="auto"/> </div>
+        <div class="column" style="overflow-y: scroll;"> Ein CPS besteht normalerweise aus vier Bestandteilen. Hierzu gehören, wie im linken Bild zu sehen:
+          <ul>
+            <li>Sensoren, um Einflüsse aus der Umwelt/Produktion zu messen und wahrzunehmen.</li>
+            <li>Aktoren, um auf die Umwelt einzuwirken</li>
+            <li>Kommunikationsschnittstellen, diese müssen nicht aus <a href="https://de.wikipedia.org/wiki/Wireless_Local_Area_Network" style="text-decoration: underline; color: #fcbc0d" target="_blank" rel="noreferrer noopener">WLAN</a> oder <a href="https://de.wikipedia.org/wiki/Local_Area_Network" style="text-decoration: underline; color: #fcbc0d" target="_blank" rel="noreferrer noopener">LAN</a> bestehen und könnten bspw. auch mit <a href="https://de.wikipedia.org/wiki/RFID" style="text-decoration: underline; color: #fcbc0d" target="_blank" rel="noreferrer noopener">RFID</a>-Tags ausgestattet sein oder Bussysteme wie <a href="https://de.wikipedia.org/wiki/Controller_Area_Network" style="text-decoration: underline; color: #fcbc0d" target="_blank" rel="noreferrer noopener">CAN</a> nutzen.</li>
+            <li>Rechnersystemen, die die von den Sensoren erhobenen Werte aufnehmen und ggf. verarbeiten, die Aktoren zu steuern und mit anderen Systemen zu kommunizieren.</li>
+          </ul><br>
+          Daneben gibt es noch Sonderformen, wie zum Beispiel bei dem zuvor erwähnten RFID-Tag. Bei diesen CPS fehlt oftmals der Aktor. Einsatzgebiet ist hierbei bspw. die Überwachung der Lagerungsbedingungen von Halbleitern um festzustellen, ob diese vor dem Lötprozess noch getrocknet werden müssen, um Beschädigungen durch sich schnell ausdehnende Luftfeuchtigkeit, die während der Lagerung eingedrungen ist, zu vermeiden. </div>
+	</div>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
