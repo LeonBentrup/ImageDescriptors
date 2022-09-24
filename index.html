@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style>
+@-ms-viewport {
+width: device-width;
+}
+</style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+<div id="pano"></div>
+<div id="sceneList">
+  <ul class="scenes">
+    <a href="javascript:void(0)" class="scene" data-id="0-test">
+    <li class="text">test</li>
+    </a> <a href="javascript:void(0)" class="scene" data-id="1-test-360">
+    <li class="text">test 360</li>
+    </a>
+  </ul>
+</div>
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+<a href="javascript:void(0)" id="autorotateToggle"> <img class="icon off" src="img/play.png"> <img class="icon on" src="img/pause.png"> </a> <a href="javascript:void(0)" id="fullscreenToggle"> <img class="icon off" src="img/fullscreen.png"> <img class="icon on" src="img/windowed.png"> </a> <a href="javascript:void(0)" id="sceneListToggle"> <img class="icon off" src="img/expand.png"> <img class="icon on" src="img/collapse.png"> </a> <a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1"> <img class="icon" src="img/up.png"> </a> <a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2"> <img class="icon" src="img/down.png"> </a> <a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3"> <img class="icon" src="img/left.png"> </a> <a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4"> <img class="icon" src="img/right.png"> </a> <a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5"> <img class="icon" src="img/plus.png"> </a> <a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6"> <img class="icon" src="img/minus.png"> </a>
+<textarea class="scrollabletextbox" style="overflow:hidden; display: none" name="note" id="txtBox1">
+Casey: Hey! Hier oben. 
+	
+</textarea>
+<div style="position: fixed; display: block; background-color: white; width: 100%; height: 100%" id="divCPS">
+  <div style="resize:none; border:none; font-family:Arial; font-size: 36pt; color:#0069A2" rows="1" cols="50">Cyber-physische Systeme</div>
+  <br>
+  <div style="resize:none; border:none; font-family:Arial; font-size: 28pt; color:#000000; overflow: hidden;"> Unter cyber-physischen Systemen (CPS) werden Systeme verstanden, die aus einer Steuerung wie einem eingebetteten System oder Computer das beziehungsweise der Einfluss auf die reale Welt hat und drahtgebunden und drahtlos mit anderen Systemen kommuniziert. <br>
+    <i>Nutzen Sie die Tabs um sich verschiedenen Inhalte anzusehen.</i> </div>
+  <br>
+  <div>
+    <button class="tablink" onclick="openPage('Einführung', this, '#fcbc0d')" id="defaultOpen">Einführung</button>
+    <button class="tablink" onclick="openPage('CPS in Deutschland', this, '#fcbc0d')">CPS in Deutschland</button>
+    <button class="tablink" onclick="openPage('Bestandteile', this, '#fcbc0d')">Bestandteile</button>
+    <div id="Einführung" class="tabcontent">
+      <iframe width="840" height="474" src="https://www.youtube-nocookie.com/embed/vVeyePVg8cI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div id="CPS in Deutschland" class="tabcontent">
+      <div class="row">
+        <div class="column"> <img src="https://www.its-owl.de/fileadmin/Bilder/_processed_/0/3/csm_Organisation_6adee3b7de.jpg" width="100%"/>
+          <p style="font-size: 18pt"><cite><a  href="https://www.its-owl.de/technologie-netzwerk/organisation/" style="text-decoration: underline; color: #fcbc0d" target="_blank" rel="noreferrer noopener">it's OWL Clustermanagement GmbH</a> (Abgerufen 24.09.22)</cite> Zusammensetzung des Spitzenclusters "it's OWL"</p>
+        </div>
+        <div class="column"> Auch in Deutschland haben Industrie und Forschung zusammengeschlossen und Spitzencluster wie "it’s OWL" oder "microTEC Südwest" gebildet. Zu den Unternehmen gehören unter anderem Phoenix Contact, Dr. Oetker und DMG MORI  (<a href="https://www.its-owl.de/technologie-netzwerk/partner/kern-unternehmen/" style="text-decoration: underline; color: #fcbc0d" target="_blank" rel="noreferrer noopener">it’s OWL</a>) und ABB, Bosch und Festo (<a href="https://www.microtec-suedwest.de/mitglieder/mitglieder" style="text-decoration: underline; color: #fcbc0d" target="_blank" rel="noreferrer noopener">microTEC Südwest</a>).<br>
+          Das linke Bild des organisatorischen Aufbaus des it’s OWL-Clusters soll aber nochmals verdeutlichen, das ganz im Sinne der individuellen Teilhabe nicht nur Industrie und Forschung dort für sich alleine zusammen arbeiten, sondern auch die Region an sich und auch kleinere und mittlere Unternehmen die Vereinsmitglieder sind durch spezielle Angebote an den entwickelten Technologien teilhaben können. </div>
+      </div>
+    </div>
+    <div id="Bestandteile" class="tabcontent">
+      <div class="row">
+        <div class="column" style="flex: 35%"> <img src="img/cps.png" width="100%"/> </div>
+        <div class="column"> Ein CPS besteht normalerweise aus vier Bestandteilen. Hierzu gehören, wie im linken Bild zu sehen:
+          <ul>
+            <li>- Sensoren, um Einflüsse aus der Umwelt/Produktion zu messen und wahrzunehmen.</li>
+            <li>- Aktoren, um auf die Umwelt einzuwirken</li>
+            <li>- Kommunikationsschnittstellen, diese müssen nicht aus <a href="https://de.wikipedia.org/wiki/Wireless_Local_Area_Network" style="text-decoration: underline; color: #fcbc0d" target="_blank" rel="noreferrer noopener">WLAN</a> oder <a href="https://de.wikipedia.org/wiki/Local_Area_Network" style="text-decoration: underline; color: #fcbc0d" target="_blank" rel="noreferrer noopener">LAN</a> bestehen und könnten bspw. auch mit <a href="https://de.wikipedia.org/wiki/RFID" style="text-decoration: underline; color: #fcbc0d" target="_blank" rel="noreferrer noopener">RFID</a>-Tags ausgestattet sein oder Bussysteme wie <a href="https://de.wikipedia.org/wiki/Controller_Area_Network" style="text-decoration: underline; color: #fcbc0d" target="_blank" rel="noreferrer noopener">CAN</a> nutzen.</li>
+            <li>- Rechnersystemen, die die von den Sensoren erhobenen Werte aufnehmen und ggf. verarbeiten, die Aktoren zu steuern und mit anderen Systemen zu kommunizieren.</li>
+          </ul><br>
+          Daneben gibt es noch Sonderformen, wie zum Beispiel bei dem zuvor erwähnten RFID-Tag. Bei diesen CPS fehlt oftmals der Aktor. Einsatzgebiet ist hierbei bspw. die Überwachung der Lagerungsbedingungen von Halbleitern um festzustellen, ob diese vor dem Lötprozess noch getrocknet werden müssen, um Beschädigungen durch sich schnell ausdehnende Luftfeuchtigkeit, die während der Lagerung eingedrungen ist, zu vermeiden. </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="vendor/screenfull.min.js" ></script> 
+<script src="vendor/bowser.min.js" ></script> 
+<script src="vendor/marzipano.js" ></script> 
+<script src="data.js"></script> 
+<script src="index.js"></script>
+</body>
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</html>
