@@ -874,5 +874,9 @@ body.view-control-buttons .viewControlButton {
     padding: 30px;
 }
 ul {
-  list-style: none;
+  list-style: inside;
+	padding-left: 10px;
+}
+li{
+	padding-left: 10px;
 }
