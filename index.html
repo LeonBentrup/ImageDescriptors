@@ -39,12 +39,12 @@ Casey: Hey! Hier oben.
   <div style=" font-family:Arial; font-size: 36pt; color:#0069A2" >Cyber-physische Systeme</div>
   <div style=" font-family:Arial; font-size: 28pt; color:#; overflow: hidden;"> <i>Nutzen Sie die Tabs um sich verschiedenen Inhalte anzusehen.</i> </div>
   <ul class="nav nav-pills nav-fill py-2">
-    <li class="nav-item"> <a href="#Einführung" class="nav-link p-0" data-toggle="tab">Einführung</a> </li>
+    <li class="nav-item"> <a href="#Einführung" class="nav-link p-0 active" data-toggle="tab">Einführung</a> </li>
     <li class="nav-item"> <a href="#CPSinDeutschland" class="nav-link  p-0" data-toggle="tab">CPS in Deutschland</a> </li>
-    <li class="nav-item"> <a href="#Bestandteile" class="nav-link p-0 active" data-toggle="tab">Bestandteile</a> </li>
+    <li class="nav-item"> <a href="#Bestandteile" class="nav-link p-0 " data-toggle="tab">Bestandteile</a> </li>
   </ul>
   <div class="tab-content" style="width: 100%;height: 100%; background-color: white">
-    <div class="tab-pane fade" id="Einführung">
+    <div class="tab-pane fade show active" id="Einführung">
       <iframe width="840" height="474" src="https://www.youtube-nocookie.com/embed/vVeyePVg8cI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="tab-pane fade " id="CPSinDeutschland">
@@ -68,7 +68,7 @@ Casey: Hey! Hier oben.
         </div>
       </div>
     </div>
-	<div class="tab-pane fade show active" id="Bestandteile">
+	<div class="tab-pane fade " id="Bestandteile">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-5">
@@ -90,6 +90,53 @@ Casey: Hey! Hier oben.
     </div>
 	</div>
 	<button id="closeButton" style="position: fixed; top: 0; right: 0; background-color: #fcbc0d"><img src="img/close.png" style="height: 40px"/></button>
+</div>
+	
+<div style="position: fixed; display: none; background-color: white; width: 100%; height: 940px; z-index: 15" id="divDT">
+  <div style=" font-family:Arial; font-size: 36pt; color:#0069A2" >Digitaler Zwilling</div>
+  <div style=" font-family:Arial; font-size: 28pt; color:#; overflow: hidden;"> <i>Nutzen Sie die Tabs um sich verschiedenen Inhalte anzusehen.</i> </div>
+  <ul class="nav nav-pills nav-fill py-2">
+    <li class="nav-item"> <a href="#EinführungDT" class="nav-link p-0 active" data-toggle="tab">Einführung</a> </li>
+    <li class="nav-item"> <a href="#DTinSchule" class="nav-link  p-0" data-toggle="tab">Digitaler Zwilling in der Lehre</a> </li>
+  </ul>
+  <div class="tab-content" style="width: 100%;height: 100%; background-color: white">
+    <div class="tab-pane fade show active" id="EinführungDT">
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rg3mCUzITDo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="tab-pane fade " id="DTinSchule">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-12"> <img class="img img-fluid" src="img/dtDemo.jpg"/> </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <p style="font-size: 18pt">Ausschnitt aus der realvirtual.io Demo</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="text overflow-auto"> Genauso wie in der Industrie können digitale Zwillinge auch in der Lehre eingesetzt werden. Durch diese lassen sich bspw. SPS-Programme erst am digitalen Zwilling testen. Das sorgt zum einen dafür, dass jeder Lernende für sich testen kann und das Aufteilen der Zeit am realen Demonstrator entfällt. Die Lernenden sind in Lernsituationen, in denen es um Design und Entwicklung geht, zudem nicht mehr auf die real in der Schule vorhandenen Bauteile und Maschinen beschränkt. Durch digitale Zwillinge lässt sich der Entwurfsprozess der Teil vieler Lernfelder wesentlich realitätsnäher abbilden. <br>
+			Software die in diesem Rahmen genutzt oder getestet werden kann, ist bspw. <a href="https://www.autodesk.de/education/edu-software/overview?sorting=featured&filters=individual" style="text-decoration: underline; color: #fcbc0d" target="_blank" rel="noreferrer noopener">Autodesk Maya</a> mit der Erweiterung <a href="https://www.mimicformaya.com/" style="text-decoration: underline; color: #fcbc0d" target="_blank" rel="noreferrer noopener">Mimic</a> für die Programmierung und Simulation von Roboterarmen und <a href="https://game4automation.com/" style="text-decoration: underline; color: #fcbc0d" target="_blank" rel="noreferrer noopener">realvirtual.io</a> welches die Spieleengine Unity nutzt um komplette virtuelle Inbetriebnahmen auf Basis von CAD-Modellen ermöglicht und auch die Integration von realen Steuerungen zulässt. Festo bietet zudem mit Ciros die Möglichkeit die Stationen aus Festo Didactic oder eigene Designs in Hard- oder Software zu simulieren.			
+			  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+	</div>
+	<button id="closeButton1" style="position: fixed; top: 0; right: 0; background-color: #fcbc0d"><img src="img/close.png" style="height: 40px"/></button>
+</div>
+	<div style="position: fixed; display: block; background-color: white; width: 100%; height: 940px; z-index: 15" id="divKI">
+  <div style=" font-family:Arial; font-size: 36pt; color:#0069A2" >Künstliche Intelligenz</div>
+ <iframe width="1120" height="630" src="https://www.youtube-nocookie.com/embed/_kfXmqJevFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+		<div style="font-family: Arial; font-size: 29pt"> Das im oberen Video nur kurz angesprochene Thema des Deep Learning kann mit Hilfe des <a href="http://www.thebigcb.com/projects/CreatureCreator/" style="text-decoration: underline; color: #fcbc0d" target="_blank" rel="noreferrer noopener">CreatureCreator</a>'s spielerisch erfahren werden und soll nur beispielhaft einen Teil künstlicher Intelligenz darstellen. 
+		</div>
+
+	
+	<button id="closeButton2" style="position: fixed; top: 0; right: 0; background-color: #fcbc0d"><img src="img/close.png" style="height: 40px"/></button>
 </div>
 <script src="vendor/screenfull.min.js" ></script> 
 <script src="vendor/bowser.min.js" ></script> 
