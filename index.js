@@ -404,7 +404,10 @@ function idAlert(event) {
 		document.getElementById("divCPS").style.display = "none";
 	}
 }
-
+document.getElementById('closeButton').addEventListener('click', function(e) {
+    e.preventDefault();
+    this.parentNode.style.display = 'none';
+}, false);
   // Display the initial scene.
   switchScene(scenes[0]);
 

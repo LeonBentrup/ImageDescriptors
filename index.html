@@ -35,7 +35,7 @@ height: 940px
 Casey: Hey! Hier oben. 
 	
 </textarea>
-<div style="position: fixed; display: block; background-color: white; width: 100%; height: 940px" id="divCPS">
+<div style="position: fixed; display: none; background-color: white; width: 100%; height: 940px; z-index: 15" id="divCPS">
   <div style=" font-family:Arial; font-size: 36pt; color:#0069A2" >Cyber-physische Systeme</div>
   <div style=" font-family:Arial; font-size: 28pt; color:#; overflow: hidden;"> <i>Nutzen Sie die Tabs um sich verschiedenen Inhalte anzusehen.</i> </div>
   <ul class="nav nav-pills nav-fill py-2">
@@ -43,7 +43,7 @@ Casey: Hey! Hier oben.
     <li class="nav-item"> <a href="#CPSinDeutschland" class="nav-link  p-0" data-toggle="tab">CPS in Deutschland</a> </li>
     <li class="nav-item"> <a href="#Bestandteile" class="nav-link p-0 active" data-toggle="tab">Bestandteile</a> </li>
   </ul>
-  <div class="tab-content">
+  <div class="tab-content" style="width: 100%;height: 100%; background-color: white">
     <div class="tab-pane fade" id="Einführung">
       <iframe width="840" height="474" src="https://www.youtube-nocookie.com/embed/vVeyePVg8cI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
@@ -88,8 +88,8 @@ Casey: Hey! Hier oben.
         </div>
       </div>
     </div>
-
-  </div>
+	</div>
+	<button id="closeButton" style="position: fixed; top: 0; right: 0; background-color: #fcbc0d"><img src="img/close.png" style="height: 40px"/></button>
 </div>
 <script src="vendor/screenfull.min.js" ></script> 
 <script src="vendor/bowser.min.js" ></script> 
