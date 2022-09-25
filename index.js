@@ -416,6 +416,14 @@ document.getElementById('closeButton').addEventListener('click', function(e) {
     e.preventDefault();
     this.parentNode.style.display = 'none';
 }, false);
+			document.getElementById('closeButtonGX').addEventListener('click', function(e) {
+    e.preventDefault();
+    this.parentNode.style.display = 'none';
+}, false);
+				document.getElementById('closeButtonVE').addEventListener('click', function(e) {
+    e.preventDefault();
+    this.parentNode.style.display = 'none';
+}, false);
   // Display the initial scene.
   switchScene(scenes[0]);
 
