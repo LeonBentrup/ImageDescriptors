@@ -878,5 +878,5 @@ body.view-control-buttons .viewControlButton {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-		height: 100%
+	height: 100%
 }
