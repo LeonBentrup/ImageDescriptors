@@ -846,9 +846,11 @@ body.view-control-buttons .viewControlButton {
 .nav-pills .nav-item .nav-link {
     background-color: #575757;
     color: #FFF;
+	font-size: 28pt
 }
 .nav-pills .nav-item .nav-link.active {
     background-color: #fcbc0d;
+	font-size: 28pt
 }
 .tab-content{
 	font-size: 28pt
