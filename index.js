@@ -347,7 +347,7 @@
     };
 
     // Show content when hotspot is clicked.
-    wrapper.querySelector('.info-hotspot-header').addEventListener('click', toggle);
+    //wrapper.querySelector('.info-hotspot-header').addEventListener('click', toggle);
 	wrapper.querySelector('.info-hotspot-header').addEventListener('click', idAlert);
 
     // Hide content when close icon is clicked.
