@@ -18,19 +18,8 @@ height: 940px
 </head>
 <body class="multiple-scenes " style="height: 940px">
 <div id="pano"></div>
-<div id="sceneList">
-  <ul class="scenes">
-    <a href="javascript:void(0)" class="scene" data-id="0-test">
-    <li class="text">test</li>
-    </a> <a href="javascript:void(0)" class="scene" data-id="1-test-360">
-    <li class="text">test 360</li>
-    </a>
-  </ul>
-</div>
-<div id="titleBar">
-  <h1 class="sceneName"></h1>
-</div>
-<a href="javascript:void(0)" id="autorotateToggle"> <img class="icon off" src="img/play.png"> <img class="icon on" src="img/pause.png"> </a> <a href="javascript:void(0)" id="fullscreenToggle"> <img class="icon off" src="img/fullscreen.png"> <img class="icon on" src="img/windowed.png"> </a> <a href="javascript:void(0)" id="sceneListToggle"> <img class="icon off" src="img/expand.png"> <img class="icon on" src="img/collapse.png"> </a> <a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1"> <img class="icon" src="img/up.png"> </a> <a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2"> <img class="icon" src="img/down.png"> </a> <a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3"> <img class="icon" src="img/left.png"> </a> <a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4"> <img class="icon" src="img/right.png"> </a> <a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5"> <img class="icon" src="img/plus.png"> </a> <a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6"> <img class="icon" src="img/minus.png"> </a>
+
+ <a href="javascript:void(0)" id="fullscreenToggle"> <img class="icon off" src="img/fullscreen.png"> <img class="icon on" src="img/windowed.png"> </a>  <a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1"> <img class="icon" src="img/up.png"> </a> <a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2"> <img class="icon" src="img/down.png"> </a> <a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3"> <img class="icon" src="img/left.png"> </a> <a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4"> <img class="icon" src="img/right.png"> </a> <a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5"> <img class="icon" src="img/plus.png"> </a> <a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6"> <img class="icon" src="img/minus.png"> </a>
 <textarea class="scrollabletextbox" style="overflow:hidden; display: none" name="note" id="txtBox1">
 Casey: Hey! Hier oben. 
 	
@@ -166,10 +155,32 @@ Casey: Hey! Hier oben.
   </div>
   <button id="closeButtonVE" style="position: fixed; top: 0; right: 0; background-color: #fcbc0d"><img src="img/close.png" style="height: 40px"/></button>
 </div>
-	<div style="position: fixed; display: block; background-color: white; width: 100%; height: 940px; z-index: 15" id="divR4">
+	<div style="position: fixed; display: none; background-color: white; width: 100%; height: 940px; z-index: 15" id="divR4">
   <div style=" font-family:Arial; font-size: 36pt; color:#0069A2" >RAMI 4.0</div>
   <iframe width="1120" height="630" src="https://www.youtube-nocookie.com/embed/U3dBFuknff4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <button id="closeButtonR4" style="position: fixed; top: 0; right: 0; background-color: #fcbc0d"><img src="img/close.png" style="height: 40px"/></button>
+</div>
+		<div style="position: fixed; display: none; background-color: white; width: 100%; height: 940px; z-index: 15" id="divSF">
+  <div style=" font-family:Arial; font-size: 36pt; color:#0069A2" >Smart Factory</div>
+	      <div class="container-fluid" style="font-size: 28pt">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-12"> <img class="img img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/6/67/BMW_Leipzig_MEDIA_050719_Download_Karosseriebau_max.jpg"/> </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <p style="font-size: 18pt"><a href="https://commons.wikimedia.org/wiki/File:BMW_Leipzig_MEDIA_050719_Download_Karosseriebau_max.jpg">BMW Werk Leipzig</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/de/deed.en">CC BY-SA 2.0 DE</a>, via Wikimedia Commons</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="text overflow-auto"> Im Laufe dieses Lernbausteins haben Sie bereits viele für den technischen Bereich wichtige Bestandteile einer Smart Factory kennengelernt. Lesen sie sich zum Abschluss das Whitepaper des Frauenhofer IML zum Thema(<a href="https://www.iml.fraunhofer.de/content/dam/iml/de/documents/101/15_Whitepaper_Smartfactory.pdf" style="text-decoration: underline; color: #fcbc0d" target="_blank" rel="noreferrer noopener">Der Weg zur Smart Factory</a>) durch. In diesem werden die bisher dargestellten Themen nochmals aufgegriffen und am Weg zur Smart Factory mit der bisherigen Fabrik verglichen. Dies soll ihnen nicht nur beim technischen Verständnis helfen, sondern auch einen Anstoß geben, wie Ansätze der Smart Factory in Lernsituationen für Auszubildende umgesetzt werden können.</div>
+          </div>
+        </div>
+      </div>
+			
+  <button id="closeButtonSF" style="position: fixed; top: 0; right: 0; background-color: #fcbc0d"><img src="img/close.png" style="height: 40px"/></button>
 </div>
 <script src="vendor/screenfull.min.js" ></script> 
 <script src="vendor/bowser.min.js" ></script> 
