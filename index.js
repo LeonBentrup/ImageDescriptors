@@ -413,7 +413,7 @@ function idAlert(event) {
 	document.getElementById("divVE").style.display = "block";
   }
 		else if(event.currentTarget.textContent.includes('Rami 4.0')){
-	document.getElementById("divGX").style.display = "block";
+	document.getElementById("divR4").style.display = "block";
   }
 			else if(event.currentTarget.textContent.includes('Smart Factory')){
 	document.getElementById("divSF").style.display = "block";
