@@ -397,8 +397,26 @@
 }
 
 function idAlert(event) { 
-  if(event.currentTarget.textContent.includes('CPS2')){
+  if(event.currentTarget.textContent.includes('Cyber-physische Systeme')){
 	document.getElementById("divCPS").style.display = "block";
+  }
+	else if(event.currentTarget.textContent.includes('Digitaler Zwilling')){
+	document.getElementById("divDT").style.display = "block";
+  }
+		else if(event.currentTarget.textContent.includes('Künstliche Intelligenz')){
+	document.getElementById("divKI").style.display = "block";
+  }
+		else if(event.currentTarget.textContent.includes('Gaia-X')){
+	document.getElementById("divGX").style.display = "block";
+  }
+			else if(event.currentTarget.textContent.includes('Virtual Engineering')){
+	document.getElementById("divVE").style.display = "block";
+  }
+		else if(event.currentTarget.textContent.includes('Rami 4.0')){
+	document.getElementById("divGX").style.display = "block";
+  }
+			else if(event.currentTarget.textContent.includes('Smart Factory')){
+	document.getElementById("divSF").style.display = "block";
   }
 	else{
 		document.getElementById("divCPS").style.display = "none";
