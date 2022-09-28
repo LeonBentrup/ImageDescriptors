@@ -389,10 +389,64 @@
     return null;
   }
 	function hideTxtBox(scene) {
-  if (sanitize(scene.data.name) === "test") {
-    document.getElementById("txtBox1").style.display = "block";
-  } else {
-    document.getElementById("txtBox1").style.display = "none";
+  if (sanitize(scene.data.name) === "Vorplatz") {
+    document.getElementById("txtBoxVorplatz").style.display = "block";
+	document.getElementById("txtBoxTreppen").style.display = "none";
+	document.getElementById("txtBoxBüro").style.display = "none";
+	document.getElementById("txtBoxKollegen").style.display = "none";
+	document.getElementById("txtBoxArbeitsplatz").style.display = "none";
+	document.getElementById("txtBoxProduktion").style.display = "none";
+
+  }
+		else if(sanitize(scene.data.name) === "Treppen"){
+    document.getElementById("txtBoxVorplatz").style.display = "none";
+	document.getElementById("txtBoxTreppen").style.display = "block";
+	document.getElementById("txtBoxBüro").style.display = "none";
+	document.getElementById("txtBoxKollegen").style.display = "none";
+	document.getElementById("txtBoxArbeitsplatz").style.display = "none";
+	document.getElementById("txtBoxProduktion").style.display = "none";
+
+}
+		else if(sanitize(scene.data.name) === "Büro"){
+    document.getElementById("txtBoxVorplatz").style.display = "none";
+	document.getElementById("txtBoxTreppen").style.display = "none";
+	document.getElementById("txtBoxBüro").style.display = "block";
+	document.getElementById("txtBoxKollegen").style.display = "none";
+	document.getElementById("txtBoxArbeitsplatz").style.display = "none";
+	document.getElementById("txtBoxProduktion").style.display = "none";
+
+}
+		else if(sanitize(scene.data.name) === "Kollegen"){
+    document.getElementById("txtBoxVorplatz").style.display = "none";
+	document.getElementById("txtBoxTreppen").style.display = "none";
+	document.getElementById("txtBoxBüro").style.display = "none";
+	document.getElementById("txtBoxKollegen").style.display = "block";
+	document.getElementById("txtBoxArbeitsplatz").style.display = "none";
+	document.getElementById("txtBoxProduktion").style.display = "none";
+}
+		else if(sanitize(scene.data.name) === "Arbeitsplatz"){
+    document.getElementById("txtBoxVorplatz").style.display = "none";
+	document.getElementById("txtBoxTreppen").style.display = "none";
+	document.getElementById("txtBoxBüro").style.display = "none";
+	document.getElementById("txtBoxKollegen").style.display = "none";
+	document.getElementById("txtBoxArbeitsplatz").style.display = "block";
+	document.getElementById("txtBoxProduktion").style.display = "none";
+}
+		else if(sanitize(scene.data.name) === "Produktion"){
+    document.getElementById("txtBoxVorplatz").style.display = "none";
+	document.getElementById("txtBoxTreppen").style.display = "none";
+	document.getElementById("txtBoxBüro").style.display = "none";
+	document.getElementById("txtBoxKollegen").style.display = "none";
+	document.getElementById("txtBoxArbeitsplatz").style.display = "none";
+	document.getElementById("txtBoxProduktion").style.display = "block";
+}
+   else {
+    document.getElementById("txtBoxVorplatz").style.display = "none";
+	document.getElementById("txtBoxTreppen").style.display = "none";
+	document.getElementById("txtBoxBüro").style.display = "none";
+	document.getElementById("txtBoxKollegen").style.display = "none";
+	document.getElementById("txtBoxArbeitsplatz").style.display = "none";
+	document.getElementById("txtBoxProduktion").style.display = "none";
   }
 }
 

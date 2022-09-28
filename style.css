@@ -848,6 +848,7 @@ body.view-control-buttons .viewControlButton {
     font-family: Arial;
     font-size: 120%;
     overflow:scroll;
+	padding: 10px;
 }
 .nav-pills .nav-item .nav-link {
     background-color: #575757;
